@@ -6,29 +6,78 @@
 
 
 .container{
-    width: 40vw;
+    width: 90vw;
     height: 90vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
     text-align: start;
     overflow-y: auto;
 }
 
+.message .textmessage {
+    font-size: 20px;
+    color: rgb(51, 50, 50);
+    position:relative;
+}
+
+#icon {
+    background-color: transparent;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+    font-size: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0; 
+}
+
+.sent:hover #icon {
+    display: inline-flex;
+    opacity: 1;
+    
+}
+
+
 .message {
-    background-color: #43c561;
     width: fit-content;
-    padding: 5px;
     margin: 7px;
-    font-size: 25px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.none {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.messageElement {
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+.reciev {
+    background-color: rgb(190, 190, 190);
+}
+
+.sent {
+    background-color: #43c561;
 }
 
 .message span {
-    background-color: transparent;
+    background-color: #transparent;
+    padding: 6px;
+    border-radius: 8px;
     width: fit-content;
-    padding: 5px;
-    margin: 7px;
+    margin: 3px;
     font-size: 10px;
     color: gray;
 }
@@ -41,6 +90,8 @@
     float: left;
     clear: both;
 }
+
+
 
 .footer {
     display: flex;
