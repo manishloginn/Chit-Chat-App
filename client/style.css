@@ -15,11 +15,22 @@
 }
 
 .message {
-    background-color: aqua;
+    background-color: #43c561;
     width: fit-content;
     padding: 5px;
     margin: 7px;
-    font-size: 25px
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.message span {
+    background-color: transparent;
+    width: fit-content;
+    padding: 5px;
+    margin: 7px;
+    font-size: 10px;
+    color: gray;
 }
 
 .sent {
